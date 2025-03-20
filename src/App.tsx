@@ -1,12 +1,7 @@
  
 import './App.css'
-
+import AppRutas from './AppRutas';
 export default function App(){
-  return(
-    <>
-       <div className="">
-          
-       </div>
-    </>
-  );
+  return <AppRutas/>;
 }
+ 
