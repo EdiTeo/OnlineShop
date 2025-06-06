@@ -1,10 +1,7 @@
  
 import './App.css'
-import {Header} from './componentes/Header'
+import AppRutas from './AppRutas';
 export default function App(){
-  return(
-    <> 
-       <Header/>
-    </>
-  );
+  return <AppRutas/>;
 }
+ 
