@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {Link} from 'react-router-dom'
 export function Header(){
     const[isMenuOpen, setIsMenuOpen] = useState(false);
     const toggleMenu=()=>{
@@ -36,19 +37,38 @@ export function Header(){
                             </a>
                             </li>
                             <li className='max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3'>
-                            <a onClick={handleLinkClick} href=''className='font-medium lg:hover:text-blue-700 text-blue-700 block text-[15px]'>Home</a>
+                            <Link to='/viaje' 
+                                  onClick={handleLinkClick} 
+                                  href=''
+                                  className='font-medium lg:hover:text-blue-700 text-blue-700 block text-[15px]'
+                                  >
+                                    Viaje
+                            </Link>
                             </li>
                             <li className='max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3'>
-                                <a onClick={handleLinkClick} href='' className='font-medium lg:hover:text-blue-700 text-slate-900 block text-[15px]'>Team</a>
+                                <Link
+                                to='/mochilas' 
+                                onClick={handleLinkClick} href='' className='font-medium lg:hover:text-blue-700 text-slate-900 block text-[15px]'>Mochilas</Link>
                             </li>
                             <li className='max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3'>
-                                <a onClick={handleLinkClick} href='' className='font-medium lg:hover:text-blue-700 text-slate-900 block text-[15px]'>Feature</a>
+                                <Link 
+                                 to='/ropa' 
+                                onClick={handleLinkClick} href='' className='font-medium lg:hover:text-blue-700 text-slate-900 block text-[15px]'>Ropa</Link>
                             </li>
                             <li className='max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3'>
-                                <a onClick={handleLinkClick} href='' className='font-medium lg:hover:text-blue-700 text-slate-900 block text-[15px]'>Blog</a>
+                                <Link 
+                                 to='/hombre' 
+                                onClick={handleLinkClick} href='' className='font-medium lg:hover:text-blue-700 text-slate-900 block text-[15px]'>Hombre</Link>
                             </li>
                             <li className='max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3'>
-                                <a onClick={handleLinkClick} href='' className='font-medium lg:hover:text-blue-700 text-slate-900 block text-[15px]'>About</a>
+                                <Link 
+                                 to='/mujer' 
+                                onClick={handleLinkClick} href='' className='font-medium lg:hover:text-blue-700 text-slate-900 block text-[15px]'>Mujer</Link>
+                            </li>
+                            <li className='max-lg:border-b max-lg:border-gray-300 max-lg:py-3 px-3'>
+                                <Link 
+                                 to='/bolso'
+                                  onClick={handleLinkClick} href='' className='font-medium lg:hover:text-blue-700 text-slate-900 block text-[15px]'>Bolsos</Link>
                             </li>
                         </ul>
                     </div>
